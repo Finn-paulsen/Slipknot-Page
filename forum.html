@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Slipknot-Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Slipknot</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über Slipknot</a></li>
+            <li><a href="discography.html">Diskografie</a></li>
+            <li><a href="tourdates.html">Tourdaten</a></li>
+            <li><a href="media.html">Musik und Videos</a></li>
+            <li><a href="lyrics.html">Songtexte</a></li>
+            <li><a href="news.html">Neuigkeiten</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="profil.html">Profil</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="forum-uebersicht">
+        <h2>Forum-Übersicht</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <h3>Diskussion über die Musik von Slipknot</h3>
+                    <p>Welches ist euer Lieblingsalbum von Slipknot?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was haltet ihr von dem neuen Song 'The Chapeltown Rag'?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was sind eure Lieblingssongs von Slipknot?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Diskussion über die Texte von Slipknot</h3>
+                    <p>Was bedeutet der Song 'People = Shit' für euch?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Welche Texte von Slipknot haben euch am meisten beeinflusst?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was haltet ihr von der Verwendung von Gewalt in den Texten von Slipknot?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Diskussion über die Live-Auftritte von Slipknot</h3>
+                    <p>Welches war der beste Live-Auftritt von Slipknot, den ihr je gesehen habt?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was ist euer Lieblingsmoment aus einem Live-Auftritt von Slipknot?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was haltet ihr von der Energie von Slipknot auf der Bühne?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Diskussion über die Geschichte von Slipknot</h3>
+                    <p>Wie hat sich Slipknot im Laufe der Jahre entwickelt?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was ist euer Lieblingsalbum von Slipknot aus jeder Zeitspanne?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was haltet ihr von der aktuellen Besetzung von Slipknot?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Diskussion über die Mitglieder von Slipknot</h3>
+                    <p>Welches ist euer Lieblingsmitglied von Slipknot?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was haltet ihr von der Musik von Slipknot ohne Paul Gray?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was haltet ihr von den Soloprojekten der Mitglieder von Slipknot?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Diskussion über andere Bands im Metal-Genre</h3>
+                    <p>Welche andere Metal-Bands hört ihr gerne?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Welche Band würdet ihr Slipknot empfehlen?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was haltet ihr von der aktuellen Metal-Szene?</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Diskussion über allgemeine Musikthemen</h3>
+                    <p>Welches ist euer Lieblingsgenre?</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Was ist euer Lieblingsalbum aller Zeiten?</h3>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="neue-nachricht">
+        <h2>Neue Nachricht</h2>
+        <form action="/forum/neue-nachricht" method="post">
+            <input type="text" name="titel" placeholder="Titel">
+            <textarea name="nachricht" rows="10" cols="50" placeholder="Nachricht"></textarea>
+            <input type="submit" value="Neue Nachricht erstellen">
+        </form>
+    </section>
+
+    <section id="profil">
+        <h2>Profil</h2>
+        <ul>
+            <li>
+                <h3>Benutzername</h3>
+                <p>Slipknot-Fan</p>
+            </li>
+            <li>
+                <h3>E-Mail-Adresse</h3>
+                <p>slipknotfan@example.com</p>
+            </li>
+            <li>
+                <h3>Lieblingsband</h3>
+                <p>Slipknot</p>
+            </li>
+        </ul>
+    </section>
+
+    <div class="modal fade" id="profil-modal" tabindex="-1" aria-labelledby="profil-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profil-modal-label">Benutzerprofil</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Benutzerprofil von <span id="nutzername"></span></h3>
+                    <p id="benutzerprofil"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Slipknot Fanforum</p>
+</footer>
+</body>
+</html>
