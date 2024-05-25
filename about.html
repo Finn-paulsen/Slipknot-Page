@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slipknot Fanseite - Über Slipknot</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -13,14 +15,12 @@
 
     <div id="menu-icon">
         <img src="Bilder/logo_2.jpg" alt="Menü-Icon" width="30" height="30">
-    
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        
+
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
-    
-    
+
     <nav id="menu">
         <ul>
             <li><a href="index.html">Startseite</a></li>
@@ -34,151 +34,86 @@
             <li><a href="forum.html">Forum</a></li>
         </ul>
     </nav>
+            
+            <section id="members">
+                <h2>Die Mitglieder</h2>
+            
+                <div class="member-list">
+                    <div class="member-card" data-member-id="corey-taylor">
+                        <img src="Bilder/corey_taylor.jpg" alt="Corey Taylor" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Corey Taylor</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
 
-    <section id="about">
-        <h2>Über Slipknot</h2>
+                    <div class="member-card" data-member-id="eloy-casagrande">
+                        <img src="Bilder/eloy_casagrande.jpg" alt="Eloy Casagrande" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Eloy Casagrande</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Die Band</h3>
-                    <p>Slipknot ist eine US-amerikanische Heavy-Metal-Band aus Des Moines, Iowa. Die Band wurde 1995 gegründet und ist bekannt für ihre Masken, ihre energiegeladenen Live-Auftritte und ihren einzigartigen Sound, der eine Mischung aus Nu-Metal, Alternative Metal und Industrial ist.</p>
-                    <p>Slipknot hat weltweit über 30 Millionen Alben verkauft und zahlreiche Preise gewonnen, darunter zwei Grammy Awards.</p>
+                    <div class="member-card" data-member-id="shawn-crahan">
+                        <img src="Bilder/shawn_crahan.jpg" alt="Shawn Crahan" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Shawn Crahan</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-member-id="mick-thomson">
+                        <img src="Bilder/mick_thomson.jpg" alt="Mick Thomson" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Mick Thomson</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-member-id="sid-wilson">
+                        <img src="Bilder/sid_wilson.jpg" alt="Sid Wilson" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Sid Wilson</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-member-id="james-root">
+                        <img src="Bilder/james_root.jpg" alt="James Root" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">James Root</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-member-id="michael-pfaff">
+                        <img src="Bilder/michael_pfaff.jpg" alt="Michael Pfaff" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Michael Pfaff</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-member-id="alex-venturella">
+                        <img src="Bilder/alex_venturella.jpg" alt="Alex Venturella" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Alex Venturella</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-member-id="jeff-karnowski">
+                        <img src="Bilder/jeff_karnowski.jpg" alt="Jeff Karnowski" class="member-image">
+                        <div class="member-info">
+                            <span class="member-name">Jeff Karnowski</span>
+                            <button class="member-profile-button">Mehr erfahren</button>
+                        </div>
+                    </div>
                 </div>
-                
-                <section id="members">
-                    <h2>Die Mitglieder</h2>
-                    <div class="member-card">
-                        <img src="Bilder/shawn_crahan.jpg" alt="Shawn Crahan">
-                        <h3>Shawn Crahan</h3>
-                        <p>Geburtsdatum: 24. September 1969</p>
-                        <p>Alter: 53</p>
-                        <p>Instrumente: Perkussion, Sampler, Vocals</p>
-                        <p>Frühere Bands: Modifidious</p>
-                    </div>
-                    <div class="member-card">
-                        <img src="Bilder/mick_thomson.jpg" alt="Mick Thomson">
-                        <h3>Mick Thomson</h3>
-                        <p>Geburtsdatum: 3. November 1973</p>
-                        <p>Alter: 50</p>
-                        <p>Instrumente: Lead-Gitarre, Backing Vocals</p>
-                        <p>Frühere Bands: Stone Sour</p>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="Bilder/corey_taylor.jpg" alt="Corey Taylor">
-                        <h3>Corey Taylor</h3>
-                        <p>Geburtsdatum: 8. Dezember 1973</p>
-                        <p>Alter: 50</p>
-                        <p>Instrumente: Vocals, Percussion</p>
-                        <p>Frühere Bands: Stone Sour</p>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="Bilder/sid_wilson.jpg" alt="Sid Wilson">
-                        <h3>Sid Wilson</h3>
-                        <p>Geburtsdatum: 20. Januar 1977</p>
-                        <p>Alter: 46</p>
-                        <p>Instrumente: Turntables, Sampler, Vocals</p>
-                        <p>Frühere Bands: Drive Like Jehu</p>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="Bilder/jim_root.jpg" alt="Jim Root">
-                        <h3>Jim Root</h3>
-                        <p>Geburtsdatum: 2. Oktober 1971</p>
-                        <p>Alter: 52</p>
-                        <p>Instrumente: Gitarre, Backing Vocals</p>
-                        <p>Frühere Bands: Stone Sour</p>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="Bilder/alessandro_venturella.jpg" alt="Alessandro Venturella">
-                        <h3>Alessandro Venturella</h3>
-                        <p>Geburtsdatum: 7. März 1978</p>
-                        <p>Alter: 45</p>
-                        <p>Instrumente: Bass, Backing Vocals</p>
-                        <p>Frühere Bands: Stone Sour</p>
-                    </div>
-
-                    <div class="member-card">
-                        <img src="Bilder/jay_weinberg.jpg" alt="Jay Weinberg">
-                        <h3>Jay Weinberg</h3>
-                        <p>Geburtsdatum: 8. September 1990</p>
-                        <p>Alter: 33</p>
-                        <p>Instrumente:  Schlagzeug, Percussion</p>
-                        <p>Frühere Bands: Bruce Springsteens E Street Band, Madball, Against Me!</p>
-                    </div>
-          
-                </section>
-                
-
-                <section id="milestones">
-                    <h2>Meilensteine</h2>
-                    <div class="milestone-card">
-                        <div class="milestone-year">
-                            1995
-                        </div>
-                        <div class="milestone-content">
-                            <h3>Gründung der Band</h3>
-                            <p>Die Geburtsstunde von Slipknot - 1995 wurde die Band in Des Moines, Iowa, gegründet und legte den Grundstein für eine unvergleichliche musikalische Reise.</p>
-                        </div>
-                    </div>
-                
-                    <div class="milestone-card">
-                        <div class="milestone-year">
-                            1999
-                        </div>
-                        <div class="milestone-content">
-                            <h3>Debütalbum "Slipknot"</h3>
-                            <p>Ein bahnbrechender Moment - 1999 wurde das selbstbetitelte Debütalbum "Slipknot" veröffentlicht und brachte der Band erste Bekanntheit.</p>
-                        </div>
-                    </div>
-                
-                    <div class="milestone-card">
-                        <div class="milestone-year">
-                            2001
-                        </div>
-                        <div class="milestone-content">
-                            <h3>Durchbruch mit "Iowa"</h3>
-                            <p>Der Höhepunkt des Erfolgs - 2001 erschien "Iowa," das Slipknot endgültig in die Spitze des Nu-Metal-Genres katapultierte.</p>
-                        </div>
-                    </div>
-                
-                    <div class="milestone-card">
-                        <div class="milestone-year">
-                            2008
-                        </div>
-                        <div class="milestone-content">
-                            <h3>"All Hope Is Gone"</h3>
-                            <p>Die Spitze der Charts - 2008 erreichte das Album "All Hope Is Gone" Platz eins der Billboard 200-Charts.</p>
-                        </div>
-                    </div>
-                
-                    <div class="milestone-card">
-                        <div class="milestone-year">
-                            2019
-                        </div>
-                        <div class="milestone-content">
-                            <h3>"We Are Not Your Kind"</h3>
-                            <p>Ein modernes Meisterwerk - 2019 veröffentlichte die Band "We Are Not Your Kind," das von Kritikern gefeiert wurde.</p>
-                        </div>
-                    </div>
-
-                    <div class="milestone-card">
-                        <div class="milestone-year">
-                            2022
-                        </div>
-                        <div class="milestone-content">
-                            <h3>"The End, So Far"</h3>
-                            <p>Ein kraftvolles Comeback - 2022 veröffentlichte die Band "The End, So Far", das von Kritikern und Fans gleichermaßen gefeiert wurde.</p>
-                        </div>
-                    </div>
-                </section>
-                
-                
-
-    <footer>
+            </section>
+            
+                    <footer>
         <p>&copy; 2023 Slipknot Fanseite</p>
     </footer>
     <script src="script.js"></script>

@@ -34,41 +34,89 @@ h1 {
 }
 
 /* Menu Styles */
+/* Menu container */
 #menu {
-    background-color: #333;
-    padding: 10px 0;
-}
+    background-color: #222; /* Darker gray background */
+    padding: 15px 0; /* Increase padding slightly */
+  }
+  
 
-#menu ul {
+
+
+
+
+
+
+  
+  /* Unordered list (removes bullet points) */
+  #menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-}
-
-#menu li {
-    margin: 0 10px;
-}
-
-#menu a {
-    padding: 10px;
+    justify-content: center; /* Keep items centered */
+  }
+  
+  /* Menu items */
+  #menu li {
+    margin: 0 20px; /* Increase spacing between items */
+    position: relative; /* Needed for hover effects */
+  }
+  
+  /* Menu links */
+  #menu a {
+    padding: 10px 20px; /* Adjust padding based on font size */
     display: block;
     text-align: center;
-}
+    text-decoration: none; /* Remove underline */
+    color: #ddd; /* Light gray text color */
+    font-family: 'Arial', sans-serif; /* Base font */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for menu items */
+  #menu li:hover a {
+    color: #fff; /* White text on hover */
+    background-color: #444444; /* Dark gray background on hover */
+  }
+  
+ 
+  
+  #menu li a:after {
+    content: "\f001"; /* Replace with desired Font Awesome icon code */
+    font-family: FontAwesome; /* Assuming you've included Font Awesome */
+    font-weight: normal; /* Lighter weight for icons */
+    margin-left: 10px; /* Adjust spacing between icon and text */
+  }
+  
 
+  
+#hero {
+    background-image: url('Bilder/band_image.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  .hero-container {
+    position: relative; 
+    height: 100vh; 
+  }
+  
+  .hero-text {
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    z-index: 1; /* Stelle den Text vor das Hintergrundbild */
+    padding: 20px; /* Füge etwas Abstand um den Text hinzu */
+  }
+  
+  
 
-.hero-container {
-    background-image: url('Bilder/grunge_background.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    text-align: center;
-}
-
-.hero-text {
-    color: #fff;
-}
 
 h2 {
     font-size: 48px;
@@ -89,6 +137,8 @@ p {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+
 
 .btn:hover {
     background-color: #dd0000;
@@ -195,3 +245,116 @@ p {
   .video-item video {
     width: 100%;
   }
+
+
+
+/* Member list styles */
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px; /* Increased padding for better spacing */
+  }
+  
+  /* Member card styles */
+  .member-card {
+    width: 25%; /* Adjust width as needed */
+    margin: 15px; /* Increased spacing between cards */
+    
+    border-radius: 10px;
+    
+    position: relative; /* Required for hover effect */
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Clip overflowing content */
+    text-align: center; /* Center text within card */
+  }
+  
+  .member-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .member-card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .member-card:hover .member-card-inner {
+    opacity: 1;
+  }
+  
+  .member-image {
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 auto; /* Take up remaining space within the card */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Indicate clickable area */
+  }
+  
+  .member-card:hover .member-image {
+    transform: scale(1.2);
+  }
+  
+  .member-info { /* Renamed from member-name */
+    display: block; /* Make it a block element */
+    margin: 10px 0; /* Add some space above and below the name */
+    color: #fff;
+    font-size: 20px; /* Adjust font size as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Disable click events until hover */
+    position: absolute; /* Positioned relative to card */
+    bottom: 0; /* Position at bottom of card */
+    width: 100%; /* Full width of card */
+  }
+  
+  .member-card:hover .member-info {
+    opacity: 1;
+    pointer-events: auto; /* Enable click events on hover */
+  }
+  
+  /* Member profile button styles */
+  .member-profile-button {
+    background-color: #ff4d4d; /* Red color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .member-card:hover .member-profile-button {
+    opacity: 1; /* Visible on hover */
+  }
+  
+
+
+
+
+  
+ 
+  
+
+
+
+
+ 
+  
+  /* Member profile button styles */
+  .member-profile-button {
+    background-color: #ff4d4d; /* Red color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .member-profile-button:hover {
+    background-color: #dc3545; /* Darker red on hover */
+  }
+  
