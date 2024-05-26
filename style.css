@@ -40,14 +40,6 @@ h1 {
     padding: 15px 0; /* Increase padding slightly */
   }
   
-
-
-
-
-
-
-
-  
   /* Unordered list (removes bullet points) */
   #menu ul {
     list-style: none;
@@ -330,20 +322,7 @@ p {
   .member-card:hover .member-profile-button {
     opacity: 1; /* Visible on hover */
   }
-  
-
-
-
-
-  
  
-  
-
-
-
-
- 
-  
   /* Member profile button styles */
   .member-profile-button {
     background-color: #ff4d4d; /* Red color */
@@ -357,4 +336,17 @@ p {
   .member-profile-button:hover {
     background-color: #dc3545; /* Darker red on hover */
   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
   
