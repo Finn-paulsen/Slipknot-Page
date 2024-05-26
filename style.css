@@ -1,134 +1,134 @@
 /* General Styles */
 body {
-    font-family: 'Arial Narrow', sans-serif;
-    background-color: #222;
-    color: #fff;
+  font-family: 'Arial Narrow', sans-serif;
+  background-color: #222;
+  color: #fff;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Header Styles */
 .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 #logo {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 h1 {
-    font-size: 36px;
-    margin-left: 20px;
+  font-size: 36px;
+  margin-left: 20px;
 }
 
 /* Menu Styles */
-/* Menu container */
 #menu {
-    background-color: #222; /* Darker gray background */
-    padding: 15px 0; /* Increase padding slightly */
-  }
-  
-  /* Unordered list (removes bullet points) */
-  #menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Keep items centered */
-  }
-  
-  /* Menu items */
-  #menu li {
-    margin: 0 20px; /* Increase spacing between items */
-    position: relative; /* Needed for hover effects */
-  }
-  
-  /* Menu links */
-  #menu a {
-    padding: 10px 20px; /* Adjust padding based on font size */
-    display: block;
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    color: #ddd; /* Light gray text color */
-    font-family: 'Arial', sans-serif; /* Base font */
-    font-weight: bold; /* Bold text */
-    text-transform: uppercase; /* Convert text to uppercase */
-    transition: all 0.3s ease-in-out; /* Smooth hover effect */
-  }
-  
-  /* Hover effect for menu items */
-  #menu li:hover a {
-    color: #fff; /* White text on hover */
-    background-color: #444444; /* Dark gray background on hover */
-  }
-  
- 
-  
-  #menu li a:after {
-    content: "\f001"; /* Replace with desired Font Awesome icon code */
-    font-family: FontAwesome; /* Assuming you've included Font Awesome */
-    font-weight: normal; /* Lighter weight for icons */
-    margin-left: 10px; /* Adjust spacing between icon and text */
-  }
-  
+  background-color: #222; 
+  padding: 15px 0; 
+}
 
-  
+/* Unordered list (removes bullet points) */
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+}
+
+/* Menu items */
+#menu li {
+  margin: 0 20px; 
+  position: relative; 
+}
+
+/* Menu links */
+#menu a {
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none; 
+  color: #ddd; 
+  font-family: 'Arial', sans-serif; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Hover effect for menu items */
+#menu li:hover a {
+  color: #fff; 
+  background-color: #444444; 
+}
+
+#menu li a:after {
+  content: "\f001"; 
+  font-family: FontAwesome; 
+  font-weight: normal; 
+  margin-left: 10px; 
+}
+
+/* Hero Section Styles */
 #hero {
-    background-image: url('Bilder/band_image.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
-  
-  .hero-container {
-    position: relative; 
-    height: 100vh; 
-  }
-  
-  .hero-text {
-    position: absolute; 
-    top: 10%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center; 
-    z-index: 1; /* Stelle den Text vor das Hintergrundbild */
-    padding: 20px; /* Füge etwas Abstand um den Text hinzu */
-  }
-  
-  
+  background-image: url('Bilder/band_image.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
 
+.hero-container {
+  position: relative; 
+  height: 100vh; 
+}
 
+.hero-text {
+  position: absolute; 
+  top: 10%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  z-index: 1; 
+  padding: 20px; 
+}
+
+/* Typography Styles */
 h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .btn {
-    background-color: #ff0000;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -336,8 +336,41 @@ p {
   .member-profile-button:hover {
     background-color: #dc3545; /* Darker red on hover */
   }
-  
 
+  .profile-image {
+    /* Adjust image size as needed */
+    width: 450px;
+    height: 450px;
+  
+    /* Add border or frame */
+    border: 2px solid #ccc;
+    border-radius: 50%; /* For a circular image */
+  
+    /* Adjust margin and positioning */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image takes up the full width */
+  }
+  
+  @media (max-width: 600px) {
+    .profile-image {
+      width: 200px;
+      height: 200px;
+
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media (max-width: 400px) {
+    .profile-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .profile-image:hover {
+    /* Add a hover effect, such as a subtle shadow or opacity change */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
 
 
